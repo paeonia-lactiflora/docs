@@ -1,3 +1,10 @@
+.vitepress/cache/
+.DS_Store
+dist-ssr
+.cache
+*.local
+
+
 # Logs
 logs
 *.log
