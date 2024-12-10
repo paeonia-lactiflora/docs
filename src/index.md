@@ -12,11 +12,11 @@ hero:
     alt: 芝麻关门
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 回首往事
+      link: /#
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 不过虚惊一场
+      link: /#
 
 # features:
 #   - title: Feature A
