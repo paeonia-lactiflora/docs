@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
-// import { set_sidebar } from "../utils/auto-generate-sidebar.mjs"	// 改成自己的路径
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
+
+// 提供一键接入 51.LA 网站数据统计分析的功能
+import { La51Plugin } from 'vitepress-plugin-51la'
 
 export default defineConfig({
   title: "📕",
@@ -68,7 +70,7 @@ export default defineConfig({
           }
         ]
       },
-      
+
       // 自然科学
       {
         text: '自然科学',
@@ -114,6 +116,11 @@ export default defineConfig({
         // 如果不指定 `srcDir`，则默认使用 `vitepress` 的 `srcDir`
         // srcDir: './src',
         useH1Title: false,
+      }),
+
+      La51Plugin({
+        id: '3KZrZabR4sNgr3mS',
+        ck: '3KZrZabR4sNgr3mS'
       }),
     ],
   },
