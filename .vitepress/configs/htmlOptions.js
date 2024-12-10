@@ -1,6 +1,6 @@
 export const htmlOptions = {
   title: "杂记",
-  description: "Jason Liu 的便签本. 搜寻与捕捉灵感, 风花雪月与浅斟低唱",
+  description: "Jason Liu 的杂记, 便签本. 搜寻与捕捉灵感, 风花雪月与浅斟低唱",
   lang: "zh-CN",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],

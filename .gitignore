@@ -1,4 +1,4 @@
-.vitepress/cache/
+.vitepress/cache/deps
 .DS_Store
 dist-ssr
 .cache
