@@ -1,16 +1,17 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 
-// 提供一键接入 51.LA 网站数据统计分析的功能
-import { La51Plugin } from 'vitepress-plugin-51la'
-
 export default defineConfig({
   title: "📕",
 
   description: "Jason Liu 的便签本. 搜寻与捕捉灵感, 风花雪月与浅斟低唱",
   lang: "zh-CN",
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    
+    // 接入 51.LA 网站数据统计分析的功能
+    ['script', { charset: 'UTF-8', id: 'LA_COLLECT', src: '//sdk.51.la/js-sdk-pro.min.js' }],
+    ['script', {}, 'LA.init({id:"3KZrZabR4sNgr3mS",ck:"3KZrZabR4sNgr3mS"})'],
   ],
 
   cleanUrls: true,
@@ -116,11 +117,6 @@ export default defineConfig({
         // 如果不指定 `srcDir`，则默认使用 `vitepress` 的 `srcDir`
         // srcDir: './src',
         useH1Title: false,
-      }),
-
-      La51Plugin({
-        id: '3KZrZabR4sNgr3mS',
-        ck: '3KZrZabR4sNgr3mS'
       }),
     ],
   },
