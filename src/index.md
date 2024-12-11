@@ -7,15 +7,18 @@ hero:
   text: "只是随手捕获"
   tagline: 灵感和想法<br>风花雪月与浅斟低唱
   image:
-    # src: /logo.png
-    src: https://img.picgo.net/2024/12/08/logo428add41c0516266.png
+    src: /logo.png
+    # src: https://img.picgo.net/2024/12/08/logo428add41c0516266.png
     alt: 芝麻关门
   actions:
     - theme: brand
-      text: 回首往事
+      text: 啊啊
       link: /#
     - theme: alt
-      text: 不过虚惊一场
+      text: 哇哇
+      link: /#
+    - theme: sponsor
+      text: 嘎嘎
       link: /#
 
 # features:
@@ -26,4 +29,3 @@ hero:
 #   - title: Feature C
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

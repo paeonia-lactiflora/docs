@@ -1,3 +1,5 @@
+// 站点元数据
+
 export const htmlOptions = {
   title: "杂记",
   description: "Jason Liu 的杂记, 便签本. 搜寻与捕捉灵感, 风花雪月与浅斟低唱",
